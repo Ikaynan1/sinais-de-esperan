@@ -5,9 +5,7 @@ import { BookOpen, Clock, Heart, ArrowRight, CheckCircle } from "lucide-react";
 
 const CtaSection = () => {
   const handlePurchase = () => {
-    // Aqui você integraria com o sistema de pagamento (Hotmart, etc.)
-    console.log("Redirecionando para pagamento...");
-    alert("Redirecionamento para o sistema de pagamento seria implementado aqui!");
+    window.open('https://pay.hotmart.com/G99778413C?checkoutMode=10', '_blank');
   };
 
   return (
@@ -20,32 +18,41 @@ const CtaSection = () => {
         <div className="max-w-4xl mx-auto text-center text-white space-y-8">
           {/* Urgency badge */}
           <Badge className="bg-red-500 text-white px-6 py-3 text-lg animate-pulse-soft">
-            ⏰ ÚLTIMAS HORAS - Promoção termina hoje à meia-noite!
+            ⏰ Oferta especial por tempo limitado!
           </Badge>
 
-          {/* Main heading */}
+          {/* Main heading - mais emocional */}
           <div className="space-y-4">
             <Heart className="w-16 h-16 mx-auto text-white/90" />
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight">
-              Este eBook pode mudar sua forma de ver e lidar com os sinais do seu filho
+              Seu filho precisa de você segura e confiante.
             </h2>
             <p className="text-xl md:text-2xl text-trust-100 leading-relaxed">
-              Clique no botão abaixo, garanta sua cópia e tenha mais clareza <span className="font-semibold text-white">ainda hoje</span>.
+              Pare de sofrer na incerteza. Tenha as respostas que você precisa{" "}
+              <span className="font-semibold text-white">ainda hoje</span>.
             </p>
           </div>
 
           {/* Value proposition */}
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 space-y-6">
-            <h3 className="text-2xl font-semibold text-white">O que você vai receber agora:</h3>
+            <h3 className="text-2xl font-semibold text-white">O que você receberá agora:</h3>
             
             <div className="grid md:grid-cols-2 gap-4 text-left">
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
-                <span className="text-trust-100">Guia completo com +50 páginas de conteúdo especializado</span>
+                <span className="text-trust-100">Guia completo com os 10 sinais mais importantes</span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
-                <span className="text-trust-100">Exemplos práticos e situações reais do dia a dia</span>
+                <span className="text-trust-100">Estratégias para agir sem medo ou culpa</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
+                <span className="text-trust-100">Orientações sobre quando buscar ajuda profissional</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
+                <span className="text-trust-100">Técnicas para acolher e estimular seu filho</span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
@@ -53,15 +60,7 @@ const CtaSection = () => {
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
-                <span className="text-trust-100">Orientações sobre quando e como buscar ajuda</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
-                <span className="text-trust-100">Estratégias para apoiar emocionalmente seu filho</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-1" />
-                <span className="text-trust-100">Garantia incondicional de 7 dias</span>
+                <span className="text-trust-100">Garantia total de satisfação por 7 dias</span>
               </div>
             </div>
           </div>
@@ -81,19 +80,19 @@ const CtaSection = () => {
 
               <div className="flex items-center justify-center gap-2 text-red-600">
                 <Clock className="w-5 h-5" />
-                <span className="font-semibold">Restam poucas horas para essa oferta!</span>
+                <span className="font-semibold">Não deixe para depois. Seu filho precisa de você!</span>
               </div>
             </div>
           </div>
 
-          {/* Main CTA button */}
+          {/* Main CTA button - mais empático */}
           <div className="space-y-4">
             <Button 
               onClick={handlePurchase}
               className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-6 px-12 rounded-2xl text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto animate-pulse-soft"
             >
-              <BookOpen className="w-8 h-8 mr-4" />
-              📘 Quero Identificar os Sinais Agora!
+              <Heart className="w-8 h-8 mr-4" />
+              💝 Quero Acesso ao Guia Completo
               <ArrowRight className="w-6 h-6 ml-4" />
             </Button>
             
@@ -102,10 +101,10 @@ const CtaSection = () => {
             </p>
           </div>
 
-          {/* Final urgency message */}
+          {/* Final urgency message - mais emocional */}
           <div className="bg-yellow-400 text-yellow-900 rounded-2xl p-6 font-semibold text-lg">
-            <Clock className="w-6 h-6 inline mr-2" />
-            Não deixe para depois! Esta é sua chance de ter clareza e direção por menos de R$ 30.
+            <Heart className="w-6 h-6 inline mr-2" />
+            Você e seu filho merecem essa clareza e tranquilidade. Não espere mais!
           </div>
 
           {/* Trust indicators */}
@@ -116,7 +115,7 @@ const CtaSection = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold">4.9/5</div>
-              <div className="text-trust-200">Avaliação média</div>
+              <div className="text-trust-200">Avaliação de satisfação</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold">7 dias</div>

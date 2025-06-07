@@ -17,48 +17,53 @@ const HeroSection = () => {
           <div className="text-center lg:text-left space-y-8 animate-fade-in-up">
             <div className="space-y-4">
               <Badge className="bg-warmth-100 text-warmth-800 px-4 py-2 text-sm font-medium">
-                ⏰ Promoção válida apenas hoje
+                💝 Mais de 1.200 mães já transformaram sua jornada
               </Badge>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-800 leading-tight">
-                Você Sente Que Algo Está{" "}
+                Desconfia que seu filho pode ser{" "}
                 <span className="text-trust-600 relative">
-                  Diferente
+                  autista?
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-trust-200 rounded"></div>
                 </span>{" "}
-                no Comportamento do Seu Filho?
+                Descubra os sinais precoces e aprenda como agir com segurança e amor
               </h1>
               
               <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed">
-                Descubra agora os sinais que podem indicar o autismo em crianças pequenas 
-                e saiba o que fazer <span className="text-trust-600 font-semibold">imediatamente</span>.
+                Um guia essencial para mães que precisam de{" "}
+                <span className="text-trust-600 font-semibold">respostas claras</span> e{" "}
+                <span className="text-trust-600 font-semibold">apoio verdadeiro</span>.
               </p>
             </div>
 
-            {/* Benefits */}
+            {/* Benefits - Mais práticos e específicos */}
             <div className="space-y-4">
               <div className="flex items-center justify-center lg:justify-start gap-3">
                 <CheckCircle className="w-6 h-6 text-trust-500 flex-shrink-0" />
-                <span className="text-lg text-slate-700 font-medium">Feito por um especialista</span>
+                <span className="text-lg text-slate-700 font-medium">Aprenda a identificar os 10 sinais mais comuns do autismo</span>
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-3">
                 <CheckCircle className="w-6 h-6 text-trust-500 flex-shrink-0" />
-                <span className="text-lg text-slate-700 font-medium">Explicações simples e diretas para mães de primeira viagem</span>
+                <span className="text-lg text-slate-700 font-medium">Saiba o que fazer sem medo ou culpa</span>
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-3">
                 <CheckCircle className="w-6 h-6 text-trust-500 flex-shrink-0" />
-                <span className="text-lg text-slate-700 font-medium">Menos de R$30 para transformar seu entendimento</span>
+                <span className="text-lg text-slate-700 font-medium">Descubra quando e como buscar ajuda profissional</span>
+              </div>
+              <div className="flex items-center justify-center lg:justify-start gap-3">
+                <CheckCircle className="w-6 h-6 text-trust-500 flex-shrink-0" />
+                <span className="text-lg text-slate-700 font-medium">Acolha e estimule seu filho da melhor forma possível</span>
               </div>
             </div>
 
-            {/* CTA Button */}
+            {/* CTA Button - Mais empático */}
             <div className="pt-4">
               <Button 
                 onClick={scrollToAction}
                 className="cta-button text-lg h-16 px-8 w-full sm:w-auto"
               >
-                <BookOpen className="w-6 h-6 mr-3" />
-                📘 Quero Entender os Sinais!
+                <Heart className="w-6 h-6 mr-3" />
+                💝 Quero Ajudar Meu Filho Agora
               </Button>
             </div>
 

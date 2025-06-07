@@ -6,46 +6,46 @@ import { Star, Quote, Heart } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Camila S.",
-      child: "mãe do Noah (2 anos)",
-      content: "Eu não sabia por onde começar. Esse eBook abriu meus olhos de uma forma que nenhuma consulta médica fez. Finalmente entendi os sinais que meu filho estava mostrando.",
-      rating: 5,
-      highlight: "abriu meus olhos"
-    },
-    {
-      name: "Juliane M.",
-      child: "mãe solo",
-      content: "Valeu cada centavo. Identifiquei sinais que nem a escola percebia! Agora sei como ajudar minha filha e me sinto muito mais confiante.",
-      rating: 5,
-      highlight: "sinais que nem a escola percebia"
-    },
-    {
-      name: "Maria Clara R.",
+      name: "Marina L.",
       child: "mãe da Sofia (3 anos)",
-      content: "Como mãe de primeira viagem, me sentia perdida. Este guia me deu a direção que eu precisava. Recomendo para todas as mães que têm dúvidas.",
+      content: "Esse guia me ajudou a entender minha filha e agir com segurança. Finalmente parei de me culpar e comecei a agir. Recomendo a todas as mães!",
       rating: 5,
-      highlight: "me deu a direção que eu precisava"
+      highlight: "agir com segurança"
+    },
+    {
+      name: "Carla M.",
+      child: "mãe do Pedro (2 anos)",
+      content: "Estava perdida e com medo. Este guia me deu direção e esperança. Agora sei que posso ajudar meu filho da melhor forma.",
+      rating: 5,
+      highlight: "me deu direção e esperança"
+    },
+    {
+      name: "Ana Paula S.",
+      child: "mãe do Gabriel (4 anos)",
+      content: "Identifiquei sinais que nem os professores percebiam. O guia é claro, prático e me trouxe muito alívio. Valeu cada centavo!",
+      rating: 5,
+      highlight: "me trouxe muito alívio"
+    },
+    {
+      name: "Juliana R.",
+      child: "mãe da Laura (2 anos)",
+      content: "Parei de viver na ansiedade! O guia me ensinou a observar com amor, não com medo. Nossa relação melhorou muito.",
+      rating: 5,
+      highlight: "observar com amor, não com medo"
+    },
+    {
+      name: "Fernanda C.",
+      child: "mãe do Lucas (3 anos)",
+      content: "Como mãe de primeira viagem, me sentia completamente perdida. Este material me deu a confiança que eu precisava.",
+      rating: 5,
+      highlight: "me deu a confiança que eu precisava"
     },
     {
       name: "Patricia L.",
-      child: "mãe do Lucas (4 anos)",
-      content: "Linguagem super clara e exemplos que fazem sentido. Consegui entender melhor meu filho e hoje nossa relação está muito mais forte.",
+      child: "mãe do João (5 anos)",
+      content: "Linguagem simples, exemplos reais. Consegui entender melhor meu filho e hoje nossa conexão é muito mais forte.",
       rating: 5,
-      highlight: "nossa relação está muito mais forte"
-    },
-    {
-      name: "Ana Carolina F.",
-      child: "mãe do Gabriel (2 anos)",
-      content: "Estava ansiosa e sem saber o que fazer. O guia me trouxe paz e conhecimento. Agora sei que estou no caminho certo para ajudar meu bebê.",
-      rating: 5,
-      highlight: "me trouxe paz e conhecimento"
-    },
-    {
-      name: "Roberta M.",
-      child: "mãe da Isabella (3 anos)",
-      content: "Melhor investimento que fiz. Em poucas páginas, aprendi mais do que em meses de pesquisas na internet. Muito obrigada!",
-      rating: 5,
-      highlight: "melhor investimento que fiz"
+      highlight: "nossa conexão é muito mais forte"
     }
   ];
 
@@ -54,13 +54,13 @@ const TestimonialsSection = () => {
       <div className="container-custom">
         <div className="text-center space-y-4 mb-16">
           <Badge className="bg-green-100 text-green-800 px-6 py-2 text-lg">
-            💚 Depoimentos Reais
+            💚 Mães Reais, Histórias Verdadeiras
           </Badge>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-800">
-            O que as mães estão falando sobre o guia
+            Veja como outras mães transformaram sua jornada
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Mais de 1.200 mães já transformaram sua jornada. Veja alguns depoimentos reais:
+            Mais de 1.200 mães já encontraram clareza e paz. Você também pode:
           </p>
         </div>
 
@@ -80,7 +80,7 @@ const TestimonialsSection = () => {
 
                 {/* Content */}
                 <p className="text-slate-700 leading-relaxed text-lg">
-                  "{testimonial.content.replace(testimonial.highlight, `**${testimonial.highlight}**`)}"
+                  "{testimonial.content}"
                 </p>
 
                 {/* Author */}
@@ -103,15 +103,15 @@ const TestimonialsSection = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="text-4xl font-bold mb-2">1.200+</div>
-              <div className="text-trust-100">Mães satisfeitas</div>
+              <div className="text-trust-100">Mães transformadas</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">4.9/5</div>
-              <div className="text-trust-100">Avaliação média</div>
+              <div className="text-trust-100">Avaliação de satisfação</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">98%</div>
-              <div className="text-trust-100">Recomendariam</div>
+              <div className="text-trust-100">Recomendariam para outras mães</div>
             </div>
           </div>
         </div>

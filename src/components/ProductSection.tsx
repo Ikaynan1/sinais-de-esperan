@@ -12,23 +12,23 @@ const ProductSection = () => {
   const benefits = [
     {
       icon: Target,
-      title: "Como identificar sinais do autismo em crianças pequenas",
-      description: "Aprenda a reconhecer os primeiros sinais com exemplos práticos e claros"
+      title: "Os 10 sinais mais comuns do autismo em crianças pequenas",
+      description: "Aprenda a identificar com segurança, sem ansiedade ou medo"
+    },
+    {
+      icon: Heart,
+      title: "Como agir com amor e sem culpa",
+      description: "Estratégias práticas para apoiar seu filho de forma amorosa"
     },
     {
       icon: Clock,
       title: "Quando e como buscar ajuda profissional",
-      description: "Saiba o momento certo e como abordar especialistas de forma eficaz"
-    },
-    {
-      icon: Heart,
-      title: "O que fazer enquanto aguarda o diagnóstico",
-      description: "Estratégias práticas para apoiar seu filho durante esse período"
+      description: "Saiba o momento certo e como abordar especialistas"
     },
     {
       icon: Users,
-      title: "Como dar suporte emocional ao seu filho e à família",
-      description: "Ferramentas para manter o bem-estar de todos durante a jornada"
+      title: "Como acolher e estimular seu filho",
+      description: "Técnicas para fortalecer o vínculo e estimular o desenvolvimento"
     }
   ];
 
@@ -47,15 +47,15 @@ const ProductSection = () => {
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center gap-2 text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-trust-500" />
-                    <span>+ de 50 páginas de conteúdo</span>
+                    <span>+ de 50 páginas de conteúdo prático</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-trust-500" />
-                    <span>Linguagem simples e acessível</span>
+                    <span>Linguagem acessível para mães</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-trust-500" />
-                    <span>Exemplos reais e práticos</span>
+                    <span>Exemplos reais do dia a dia</span>
                   </div>
                 </div>
 
@@ -68,7 +68,7 @@ const ProductSection = () => {
 
             {/* Floating badges */}
             <Badge className="absolute -top-4 -right-4 bg-warmth-500 text-white px-4 py-2 animate-bounce">
-              🔥 Mais vendido
+              💝 Mais escolhido
             </Badge>
             <Badge className="absolute -bottom-4 -left-4 bg-green-500 text-white px-4 py-2 animate-pulse">
               ✅ Garantido
@@ -79,18 +79,18 @@ const ProductSection = () => {
           <div className="space-y-8 order-1 lg:order-2">
             <div className="space-y-4">
               <Badge className="bg-trust-100 text-trust-800 px-4 py-2">
-                🧩 Guia Completo
+                💝 Criado com Amor para Mães
               </Badge>
               
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-800 leading-tight">
-                "Descubra os Sinais: Um Guia para Mães Identificarem o{" "}
-                <span className="text-trust-600">Autismo Precoce</span>"
+                Tudo que você precisa saber para{" "}
+                <span className="text-trust-600">ajudar seu filho</span> da melhor forma
               </h2>
               
               <p className="text-xl text-slate-600 leading-relaxed">
-                Com <span className="font-semibold">linguagem acessível</span>, 
-                <span className="font-semibold"> exemplos reais</span> e 
-                <span className="font-semibold"> orientações práticas</span>, você saberá:
+                Com <span className="font-semibold">linguagem simples</span>, 
+                <span className="font-semibold"> exemplos práticos</span> e 
+                <span className="font-semibold"> muito acolhimento</span>, você vai aprender:
               </p>
             </div>
 
@@ -117,8 +117,8 @@ const ProductSection = () => {
                 onClick={scrollToAction}
                 className="cta-button text-lg h-16 px-8 w-full sm:w-auto"
               >
-                <BookOpen className="w-6 h-6 mr-3" />
-                📘 Quero Identificar os Sinais Agora!
+                <Heart className="w-6 h-6 mr-3" />
+                💝 Quero Ajudar Meu Filho Agora!
               </Button>
             </div>
           </div>
