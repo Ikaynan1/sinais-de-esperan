@@ -1,6 +1,6 @@
 
 import { Badge } from "@/components/ui/badge";
-import { Award, BookOpen, Users, Heart } from "lucide-react";
+import { Award, BookOpen, Users, Heart, Quote } from "lucide-react";
 
 const AuthorSection = () => {
   return (
@@ -20,12 +20,12 @@ const AuthorSection = () => {
             {/* Author photo and basic info */}
             <div className="text-center lg:text-left space-y-6">
               <div className="relative inline-block">
-                <div className="w-64 h-64 mx-auto lg:mx-0 bg-gradient-to-br from-trust-400 to-trust-600 rounded-3xl flex items-center justify-center shadow-2xl">
-                  <div className="text-white text-center">
-                    <Award className="w-20 h-20 mx-auto mb-4" />
-                    <p className="text-lg font-medium">Foto do</p>
-                    <p className="text-xl font-bold">Dr. Ikaynã</p>
-                  </div>
+                <div className="w-64 h-64 mx-auto lg:mx-0 rounded-3xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="/lovable-uploads/eb7ee9d7-b757-450c-b5a3-ce7bf0da7a62.png" 
+                    alt="Dr. Emanuel France"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 {/* Floating badges */}
@@ -39,7 +39,7 @@ const AuthorSection = () => {
 
               <div className="space-y-2">
                 <h3 className="text-2xl md:text-3xl font-heading font-bold text-slate-800">
-                  Ikaynã Toscano
+                  Dr. Emanuel France
                 </h3>
                 <p className="text-xl text-trust-600 font-medium">
                   Especialista em Autismo e Desenvolvimento Infantil
@@ -57,7 +57,7 @@ const AuthorSection = () => {
                 </p>
                 <p className="text-lg text-slate-600 leading-relaxed">
                   Com anos de experiência no acompanhamento de famílias e crianças, 
-                  Dr. Ikaynã criou este guia para tornar o conhecimento especializado 
+                  Dr. Emanuel France criou este guia para tornar o conhecimento especializado 
                   acessível a todas as mães que precisam de direção.
                 </p>
               </div>
@@ -91,7 +91,7 @@ const AuthorSection = () => {
 
               {/* Mission statement */}
               <div className="bg-gradient-to-r from-trust-500 to-trust-600 rounded-xl p-6 text-white">
-                <h4 className="text-lg font-semibold mb-3">Missão do Dr. Ikaynã:</h4>
+                <h4 className="text-lg font-semibold mb-3">Missão do Dr. Emanuel France:</h4>
                 <p className="leading-relaxed">
                   Empoderar mães com conhecimento claro e acessível, transformando 
                   ansiedade em ação e dúvidas em direcionamento prático.
@@ -104,8 +104,5 @@ const AuthorSection = () => {
     </section>
   );
 };
-
-// Missing import
-import { Quote } from "lucide-react";
 
 export default AuthorSection;
